@@ -21,18 +21,27 @@
 <body class="bg-black">
 
     <!-- Heading -->
-    <div class="flex justify-center">
+    <div class="grid grid-cols-4">
+        <div class="col-start-2 col-span-2">
         <h1 class="text-5xl p-12 font-custom text-white animate-pulse">Choose your adventure...</h1>
+    </div>
       </div>
 
+<div class="grid grid-cols-3 grid-rows-3">
       <!-- Buttons -->
-      <div class="flex justify-center">
-        <a href="./portfolio.html"><button class="w-60 transition duration-500 ease-in-out  transform hover:-translate-y-1 hover:scale-100 rounded-full py-3 px-6 text-white p-6 m-12 border-2 bg-red-500 hover:bg-green-500 font-custom">Portfolio</button></a>
 
-        <Link to='/About'><button class="w-60 transition duration-500 ease-in-out  0 transform hover:-translate-y-1 hover:scale-100 rounded-full py-3 px-6 text-white p-6 m-12 border-2 bg-red-500 hover:bg-green-500 font-custom">About</button></Link>
+        <div class="col-start-2 row-start-1 place-self-center">
+            <a href="./portfolio.html"><button class="w-60 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-100 rounded-full py-3 px-6 text-white p-6 m-12 border-2 bg-red-500 hover:bg-green-500 font-custom">Portfolio</button></a>
+        </div>
 
-        <Link to='/Contact'><button class="w-60 transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-100 rounded-full py-3 px-6 text-white p-6 m-12 border-2 bg-red-500 hover:bg-green-500 font-custom">Contact</button></Link>
+        <div class="col-start-2 row-start-2 place-self-center">
+        <a href='./about.html'><button class="w-60 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-100 rounded-full py-3 px-6 text-white p-6 m-12 border-2 bg-red-500 hover:bg-green-500 font-custom">About</button></a>
+        </div>
+
+        <div class="col-start-2 row-start-3 place-self-center">
+        <a href='/Contact'><button class="w-60 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-100 rounded-full py-3 px-6 text-white p-6 m-12 border-2 bg-red-500 hover:bg-green-500 font-custom">Contact</button></a>
+        </div>
+
       </div>
-
 </body>
 </html>
