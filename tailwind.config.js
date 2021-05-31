@@ -6,10 +6,17 @@ module.exports = {
       'custom': '"Press Start 2P"',
       'customtwo': '"VT323"'
     },
-    extend: {},
+    extend: {
+      backgroundImage: theme => ({
+        'space': "url('./retro.png')",
+        'game': "url('./game.png')"
+      }),
   },
   variants: {
-    extend: {},
+    extend: {
+        backgroundImage: ['hover', 'focus']
+      }
+    },
   },
   plugins: [],
 }
