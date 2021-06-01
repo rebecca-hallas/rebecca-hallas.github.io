@@ -23,7 +23,7 @@ function changePlayer(e) {
 
 function enter(e) {
   var player = document.getElementById("player")
-  player.src = "./player" + playerIndex + ".png"
+  player.src = "./images/player" + playerIndex + ".png"
 
   if (playerIndex == 1 && e.keyCode == '13')
   location.replace("https://rebecca-hallas.github.io/homePink.html")
