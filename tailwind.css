@@ -31526,6 +31526,26 @@ video {
   }
 }
 
+@-webkit-keyframes wiggle {
+  0%, 100% {
+    transform: rotate(-3deg);
+  }
+
+  50% {
+    transform: rotate(3deg);
+  }
+}
+
+@keyframes wiggle {
+  0%, 100% {
+    transform: rotate(-3deg);
+  }
+
+  50% {
+    transform: rotate(3deg);
+  }
+}
+
 .animate-none {
   -webkit-animation: none;
           animation: none;
@@ -31549,6 +31569,21 @@ video {
 .animate-bounce {
   -webkit-animation: bounce 1s infinite;
           animation: bounce 1s infinite;
+}
+
+.animate-wiggle {
+  -webkit-animation: wiggle 1s ease-in-out infinite;
+          animation: wiggle 1s ease-in-out infinite;
+}
+
+.animate-bounce-slow {
+  -webkit-animation: bounce 2s linear infinite;
+          animation: bounce 2s linear infinite;
+}
+
+.animate-spin-slow {
+  -webkit-animation: spin 4s linear infinite;
+          animation: spin 4s linear infinite;
 }
 
 .mix-blend-normal {
@@ -63109,6 +63144,21 @@ video {
             animation: bounce 1s infinite;
   }
 
+  .sm\:animate-wiggle {
+    -webkit-animation: wiggle 1s ease-in-out infinite;
+            animation: wiggle 1s ease-in-out infinite;
+  }
+
+  .sm\:animate-bounce-slow {
+    -webkit-animation: bounce 2s linear infinite;
+            animation: bounce 2s linear infinite;
+  }
+
+  .sm\:animate-spin-slow {
+    -webkit-animation: spin 4s linear infinite;
+            animation: spin 4s linear infinite;
+  }
+
   .sm\:mix-blend-normal {
     mix-blend-mode: normal;
   }
@@ -94574,6 +94624,21 @@ video {
   .md\:animate-bounce {
     -webkit-animation: bounce 1s infinite;
             animation: bounce 1s infinite;
+  }
+
+  .md\:animate-wiggle {
+    -webkit-animation: wiggle 1s ease-in-out infinite;
+            animation: wiggle 1s ease-in-out infinite;
+  }
+
+  .md\:animate-bounce-slow {
+    -webkit-animation: bounce 2s linear infinite;
+            animation: bounce 2s linear infinite;
+  }
+
+  .md\:animate-spin-slow {
+    -webkit-animation: spin 4s linear infinite;
+            animation: spin 4s linear infinite;
   }
 
   .md\:mix-blend-normal {
@@ -126043,6 +126108,21 @@ video {
             animation: bounce 1s infinite;
   }
 
+  .lg\:animate-wiggle {
+    -webkit-animation: wiggle 1s ease-in-out infinite;
+            animation: wiggle 1s ease-in-out infinite;
+  }
+
+  .lg\:animate-bounce-slow {
+    -webkit-animation: bounce 2s linear infinite;
+            animation: bounce 2s linear infinite;
+  }
+
+  .lg\:animate-spin-slow {
+    -webkit-animation: spin 4s linear infinite;
+            animation: spin 4s linear infinite;
+  }
+
   .lg\:mix-blend-normal {
     mix-blend-mode: normal;
   }
@@ -157510,6 +157590,21 @@ video {
             animation: bounce 1s infinite;
   }
 
+  .xl\:animate-wiggle {
+    -webkit-animation: wiggle 1s ease-in-out infinite;
+            animation: wiggle 1s ease-in-out infinite;
+  }
+
+  .xl\:animate-bounce-slow {
+    -webkit-animation: bounce 2s linear infinite;
+            animation: bounce 2s linear infinite;
+  }
+
+  .xl\:animate-spin-slow {
+    -webkit-animation: spin 4s linear infinite;
+            animation: spin 4s linear infinite;
+  }
+
   .xl\:mix-blend-normal {
     mix-blend-mode: normal;
   }
@@ -188975,6 +189070,21 @@ video {
   .\32xl\:animate-bounce {
     -webkit-animation: bounce 1s infinite;
             animation: bounce 1s infinite;
+  }
+
+  .\32xl\:animate-wiggle {
+    -webkit-animation: wiggle 1s ease-in-out infinite;
+            animation: wiggle 1s ease-in-out infinite;
+  }
+
+  .\32xl\:animate-bounce-slow {
+    -webkit-animation: bounce 2s linear infinite;
+            animation: bounce 2s linear infinite;
+  }
+
+  .\32xl\:animate-spin-slow {
+    -webkit-animation: spin 4s linear infinite;
+            animation: spin 4s linear infinite;
   }
 
   .\32xl\:mix-blend-normal {
