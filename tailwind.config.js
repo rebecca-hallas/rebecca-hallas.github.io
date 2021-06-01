@@ -8,11 +8,12 @@ module.exports = {
     },
     extend: {
       backgroundImage: theme => ({
-        'space': "url('./retro.png')",
-        'game': "url('./game.png')"
+        'space': "url('./images/retro.png')",
+        'game': "url('./images/game.png')"
       }),
       colors: {
         hotPink: '#ff6bd5',
+        limeGreen: '#52ff4d'
       },
   },
   variants: {
