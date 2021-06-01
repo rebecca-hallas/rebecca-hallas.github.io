@@ -27,4 +27,7 @@ function enter(e) {
 
   if (playerIndex == 1 && e.keyCode == '13')
   location.replace("https://rebecca-hallas.github.io/homePink.html")
+
+  if (playerIndex == 2 && e.keyCode == '13')
+  location.replace("https://rebecca-hallas.github.io/homeGreen.html")
 }
