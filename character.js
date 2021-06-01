@@ -21,6 +21,10 @@ function changePlayer(e) {
         playerIndex = 3;
   }
 
-function enter() {
+function enter(e) {
+  var player = document.getElementById("player")
+  player.src = "./player" + playerIndex + ".png"
+
+  if (playerIndex == 1 && e.keyCode == '13')
   location.replace("https://rebecca-hallas.github.io")
 }
