@@ -26,8 +26,8 @@ function enter(e) {
   player.src = "./images/player" + playerIndex + ".png"
 
   if (playerIndex == 1 && e.keyCode == '13')
-  location.replace("https://rebecca-hallas.github.io/homePink.html")
+  location.replace("https://rebecca-hallas.github.io/pink/homePink.html")
 
   if (playerIndex == 2 && e.keyCode == '13')
-  location.replace("https://rebecca-hallas.github.io/homeGreen.html")
+  location.replace("https://rebecca-hallas.github.io/green/homeGreen.html")
 }
