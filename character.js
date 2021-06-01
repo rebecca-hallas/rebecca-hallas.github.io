@@ -1,4 +1,5 @@
 document.addEventListener('keydown', changePlayer, false); 
+document.addEventListener('keydown', enter, false)
 
 var playerIndex = 1;
 
@@ -19,3 +20,7 @@ function changePlayer(e) {
     if (playerIndex == 0)
         playerIndex = 3;
   }
+
+function enter() {
+  location.replace("https://rebecca-hallas.github.io")
+}
