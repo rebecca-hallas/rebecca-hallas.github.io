@@ -26,5 +26,5 @@ function enter(e) {
   player.src = "./player" + playerIndex + ".png"
 
   if (playerIndex == 1 && e.keyCode == '13')
-  location.replace("https://rebecca-hallas.github.io")
+  location.replace("https://rebecca-hallas.github.io/homePink.html")
 }
