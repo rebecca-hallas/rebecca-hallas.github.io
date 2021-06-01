@@ -11,6 +11,9 @@ module.exports = {
         'space': "url('./retro.png')",
         'game': "url('./game.png')"
       }),
+      colors: {
+        hotPink: '#ff6bd5',
+      },
   },
   variants: {
     extend: {
