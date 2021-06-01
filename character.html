@@ -18,8 +18,18 @@
    <title>Choose Character</title>
 </head>
 <body class="bg-cover" style="background-image: url('./retro.png')">
-    <div class="dress-a-parent">
-		<img class="w-72 h-48" id="player" src="./player1.png">
+
+    <div class="flex justify-center">
+        <h1 class="text-5xl pt-24 font-custom text-white">Choose Player</h1>
+      </div>
+
+      <div class="grid grid-cols-5 grid-rows-2">
+    
+		<img class="mt-12 row-start-1 col-start-3 col-span-1 place-self-center w-72 h-48" id="player" src="./player1.png">
+
+        <h1 class="mt-12 row-start-2 col-start-2 col-span-3 text-2xl pt-5 font-custom text-white">Use the left and right arrow keys to rotate between players.</h1>
+
+        </div>
 	</div>
 
 <script src="./character.js"></script>
