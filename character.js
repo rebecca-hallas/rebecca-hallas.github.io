@@ -1,6 +1,5 @@
 document.addEventListener('keydown', changePlayer, false); 
 document.addEventListener('keydown', selectPlayer, false)
-document.addEventListener('click', clickArrow, false)
 
 var playerIndex = 1;
 
