@@ -29,16 +29,21 @@
 
       <div class="grid grid-cols-5 grid-rows-2">
     
-        <p class="mt-12 row-start-1 col-start-2 col-span-1 place-self-center text-white text-9xl">←</p>
+        <div class="mt-12 row-start-1 col-start-2 col-span-1 place-self-center">
+            <button id="left" class="text-5xl w-36 h-24 text-white border-solid border-4 border-white rounded-md py-3 px-6 bg-black hover:bg-green-500"><p>←</p></button>
+        </div>
 
 		<img class="mt-12 row-start-1 col-start-3 col-span-1 place-self-center w-72 h-48" id="player" src="./images/player1.png">
-        
 
-        <p class="mt-12 row-start-1 col-start-4 col-span-1 place-self-center text-white text-9xl">→</p>
-
-        <h1 class="mt-12 row-start-2 col-start-2 col-span-3 text-2xl pt-5 font-custom text-white">Use the left and right arrow keys to rotate between players. Once you have selected a player, hit 'enter'.</h1>
-
+        <div class="mt-12 row-start-1 col-start-4 col-span-1 place-self-center">
+            <button class="text-5xl w-36 h-24 text-white border-solid border-4 border-white rounded-md bg-black hover:bg-green-500"><p>→</p></button>
         </div>
+
+        <div class="h-24 mt-6 row-start-2 col-start-2 col-span-3 text-2xl pt-5 font-custom text-white text-center"><h1>Use the left and right arrow keys to rotate between players.</h1>
+
+        <h1 class="mt-6 text-center text-2xl font-custom text-white animate-pulse">Press Enter to continue...</h1>
+        </div>
+
 	</div>
 
 <script src="./character.js"></script>
