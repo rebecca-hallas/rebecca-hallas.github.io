@@ -1,56 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-    
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+      
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+  
+<!-- Tailwind CSS Link -->
+<link href="tailwind.css" rel="stylesheet">
 
-    <!-- Tailwind Link -->
-    <link href="tailwind.css" rel="stylesheet">
-
-    <!-- Page Title -->
-    <title>Rebecca Hallas</title>
-
+<!-- Title -->
+<title>Rebecca Hallas</title>
 </head>
+
 <body class="bg-cover" style="background-image: url('./images/retro.png')">
 
-    <div class="flex justify-center mt-6">
-        <h1 class="text-xl font-custom text-white">High Score: 20</h1>
-      </div>
-
-    <div class="flex justify-center mt-24">
-            <h1 class="text-5xl p-6 font-custom text-white animate-pulse">Press Start Button</h1>
-          </div>
-
-    <!-- Button for Computers -->
-    <div class="hidden lg:flex justify-center mt-12">
-        <a href="./character.html">
-            <button class="border-solid border-8 border-white rounded-full py-3 px-6 bg-red-500 hover:bg-red-700">
-                <h1 class="text-6xl p-12 font-custom text-white focus:outline-none">Start</h1>
-            </button>
-        </a>
-    </div>
-
-    <!-- Button for Mobiles and iPads -->
-    <div class="visible lg:invisible flex justify-center mt-12">
-      <a href="./home.html">
-          <button class="border-solid border-8 border-white rounded-full py-3 px-6 bg-green-500 hover:bg-red-700">
-              <h1 class="text-6xl p-12 font-custom text-white focus:outline-none">Start</h1>
-          </button>
-      </a>
+  <div class="flex justify-center mt-12">
+    <h1 class="text-sm lg:text-xl font-custom text-white">High Score: 21</h1>
   </div>
 
-  <div class="flex justify-center mt-32">
-    <h1 class="text-xl p-12 font-custom text-white">© 2021 Rebecca Hallas</h1>
+  <div class="flex justify-center mt-24">
+    <h1 class="text-2xl lg:text-5xl text-center p-6 font-custom text-white animate-pulse">Press Start Button</h1>
   </div>
 
-      <script src="./index.js"></script>
+  <!-- Button for Computers -->
+  <div class="hidden lg:flex justify-center mt-12">
+    <a href="./character.html">
+      <button class="border-solid border-8 border-white rounded-full py-3 px-6 bg-red-500 hover:bg-red-700">
+        <h1 class="text-6xl p-12 font-custom text-white focus:outline-none">Start</h1>
+      </button>
+    </a>
+  </div>
+
+  <!-- Button for Mobiles and iPads -->
+  <div class="visible lg:hidden flex justify-center mt-12">
+    <a href="./home.html">
+      <button class="border-solid border-8 border-white rounded-full py-1 px-3 lg:py-3 lg:px-6 bg-green-500 hover:bg-red-700">
+        <h1 class="text-2xl lg:text-6xl p-6 lg:p-12 font-custom text-white focus:outline-none">Start</h1>
+      </button>
+    </a>
+  </div>
+
+  <!-- Footer -->
+  <div class="flex justify-center mt-36 lg:mt-32">
+    <h1 class="text-sm lg:text-xl p-6 lg:p-12 font-custom text-white">© 2021 Rebecca Hallas</h1>
+  </div>
+
+  <script src="./index.js"></script>
 </body>
 </html>
