@@ -1,11 +1,13 @@
 document.addEventListener('keydown', changePlayer, false); 
 document.addEventListener('keydown', selectPlayer, false)
 document.addEventListener('click', clickArrow, false)
-document.addEventListener('click', selectClick, false)
+// document.addEventListener('click', selectClick, false)
 
 var playerIndex = 1;
 
 function changePlayer(e) {
+  console.log('changeplayer function')
+
   var player = document.getElementById("player")
   player.src = "./player" + playerIndex + ".png"
 
@@ -23,6 +25,7 @@ function changePlayer(e) {
   }
 
 function selectPlayer(e) {
+  console.log('selectplayer function')
   var player = document.getElementById("player")
   player.src = "./images/player" + playerIndex + ".png"
 
@@ -36,34 +39,33 @@ function selectPlayer(e) {
   location.replace("https://rebecca-hallas.github.io/red/homeRed.html")
 }
 
-function selectClick(e) {
-  var target = e.target
-  var select = document.getElementById("select")
-  var player = document.getElementById("player")
-  player.src = "./images/player" + playerIndex + ".png"
+// function selectClick(e) {
+//   var target = e.target
+//   var select = document.getElementById("select")
+//   // var player = document.getElementById("player")
+//   // player.src = "./images/player" + playerIndex + ".png"
 
-  if (target == select && playerIndex == 1)
-  location.replace("https://rebecca-hallas.github.io/pink/homePink.html")
+//   if (target == select && playerIndex == 1)
+//   location.replace("https://rebecca-hallas.github.io/pink/homePink.html")
 
-  if (target == select && playerIndex == 2)
-  location.replace("https://rebecca-hallas.github.io/green/homeGreen.html")
+//   if (target == select && playerIndex == 2)
+//   location.replace("https://rebecca-hallas.github.io/green/homeGreen.html")
 
-  if (target == select && playerIndex == 3)
-  location.replace("https://rebecca-hallas.github.io/red/homeRed.html")
-}
+//   if (target == select && playerIndex == 3)
+//   location.replace("https://rebecca-hallas.github.io/red/homeRed.html")
+// }
 
 function clickArrow(e) {
-  var target = e.target
+  // var target = e.target
+  console.log('click')
   var left = document.getElementById("left")
   var right = document.getElementById("right")
   var player = document.getElementById("player")
   player.src = "./images/player" + playerIndex + ".png"
   
-  if (target == left || right) 
+  if (left || right) 
   playerIndex++
 
   if (playerIndex == 4)
   playerIndex = 1
 }
-
-
