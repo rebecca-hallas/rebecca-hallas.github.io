@@ -1,6 +1,6 @@
 document.addEventListener('keydown', changePlayer, false); 
 document.addEventListener('keydown', selectPlayer, false)
-document.addEventListener('click', clickArrow, false)
+// document.addEventListener('click', clickArrow, false)
 // document.addEventListener('click', selectClick, false)
 
 var playerIndex = 1;
@@ -55,17 +55,17 @@ function selectPlayer(e) {
 //   location.replace("https://rebecca-hallas.github.io/red/homeRed.html")
 // }
 
-function clickArrow(e) {
-  // var target = e.target
-  console.log('click')
-  var left = document.getElementById("left")
-  var right = document.getElementById("right")
-  var player = document.getElementById("player")
-  player.src = "./images/player" + playerIndex + ".png"
+// function clickArrow(e) {
+//   // var target = e.target
+//   console.log('click')
+//   var left = document.getElementById("left")
+//   var right = document.getElementById("right")
+//   var player = document.getElementById("player")
+//   player.src = "./images/player" + playerIndex + ".png"
   
-  if (left || right) 
-  playerIndex++
+//   if (left || right) 
+//   playerIndex++
 
-  if (playerIndex == 4)
-  playerIndex = 1
-}
+//   if (playerIndex == 4)
+//   playerIndex = 1
+// }
