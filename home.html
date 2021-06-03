@@ -1,50 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-      <!-- Fonts -->
-      <link rel="preconnect" href="https://fonts.gstatic.com">
-      <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
       
-      <link rel="preconnect" href="https://fonts.gstatic.com">
-      <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
   
-      <!-- Tailwind Link -->
-      <link href="tailwind.css" rel="stylesheet">
+<!-- Tailwind CSS Link -->
+<link href="tailwind.css" rel="stylesheet">
 
-      <!-- Title -->
-      <title>Home</title>
+<!-- Title -->
+<title>Home</title>
 </head>
+
 <body class="bg-cover" style="background-image: url('./images/retro.png')">
-    <!-- Heading -->
 
-    <div class="grid grid-cols-4">
-        <div class="col-start-2 col-span-2">
-        <h1 class="text-5xl p-12 font-custom text-white animate-pulse">Choose your adventure...</h1>
+<!-- Heading -->
+<div class="flex-wrap">
+    <div>
+        <h1 class="text-2xl lg:text-5xl text-center p-12 font-custom text-white animate-pulse">Choose your adventure...</h1>
     </div>
-      </div>
-
-      <div class="flex justify-center">
-
-<div class="grid grid-cols-3 grid-rows-3 border-white border-4 w-1/3 bg-black bg-opacity-70">
-      <!-- Buttons -->
-
-        <div class="col-start-2 row-start-1 place-self-center">
-            <a href="./portfolio.html"><button class="h-20 w-72 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-100 rounded-full py-3 px-6 text-white m-6 border-2 bg-red-500 hover:bg-green-500 font-custom text-xl focus:outline-none">Portfolio</button></a>
-        </div>
-
-        <div class="col-start-2 row-start-2 place-self-center">
-            <a href='./about.html'><button class="h-20 w-72 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-100 rounded-full py-3 px-6 text-white m-6 border-2 bg-red-500 hover:bg-green-500 font-custom text-xl focus:outline-none">About</button></a>
-        </div>
-
-        <div class="col-start-2 row-start-3 place-self-center">
-            <a href='./contact.html'><button class="h-20 w-72 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-100 rounded-full py-3 px-6 text-white m-6 border-2 bg-red-500 hover:bg-green-500 font-custom text-xl focus:outline-none">Contact</button></a>
-        </div>
 </div>
-      </div>
+
+<!-- Main Content -->
+<div class="flex justify-center">
+
+<div class="flex-col">
+    <!-- Buttons -->
+    <div>
+        <a href="./portfolio.html"><button class="h-10 w-42 lg:h-20 lg:w-72 text-sm lg:text-xl transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-100 rounded-full py-3 px-6 text-white m-6 border-2 bg-red-500 hover:bg-green-500 font-custom focus:outline-none">Portfolio</button></a>
     </div>
+
+    <div>
+        <a href='./about.html'><button class="h-10 w-42 lg:h-20 lg:w-72 text-sm lg:text-xl transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-100 rounded-full py-3 px-6 text-white m-6 border-2 bg-red-500 hover:bg-green-500 font-custom focus:outline-none">About</button></a>
+    </div>
+
+    <div>
+        <a href='./contact.html'><button class="h-10 w-42 lg:h-20 lg:w-72 text-sm lg:text-xl transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-100 rounded-full py-3 px-6 text-white m-6 border-2 bg-red-500 hover:bg-green-500 font-custom focus:outline-none">Contact</button></a>
+    </div>
+</div>
+
+</div>
+
 </body>
 </html>
