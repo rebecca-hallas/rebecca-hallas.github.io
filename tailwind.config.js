@@ -2,6 +2,9 @@ module.exports = {
   purge: [],
   darkMode: false, // or 'media' or 'class'
   theme: {
+    screens: {
+      'lg': '1025px',
+    },
     fontFamily: {
       'custom': '"Press Start 2P"',
       'customtwo': '"VT323"'

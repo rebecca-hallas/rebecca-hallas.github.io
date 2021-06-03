@@ -29,7 +29,8 @@
             <h1 class="text-5xl p-6 font-custom text-white animate-pulse">Press Start Button</h1>
           </div>
 
-    <div class="flex justify-center mt-12">
+    <!-- Button for Computers -->
+    <div class="hidden lg:flex justify-center mt-12">
         <a href="./character.html">
             <button class="border-solid border-8 border-white rounded-full py-3 px-6 bg-red-500 hover:bg-red-700">
                 <h1 class="text-6xl p-12 font-custom text-white focus:outline-none">Start</h1>
@@ -37,10 +38,18 @@
         </a>
     </div>
 
+    <!-- Button for Mobiles and iPads -->
+    <div class="visible lg:invisible flex justify-center mt-12">
+      <a href="./home.html">
+          <button class="border-solid border-8 border-white rounded-full py-3 px-6 bg-green-500 hover:bg-red-700">
+              <h1 class="text-6xl p-12 font-custom text-white focus:outline-none">Start</h1>
+          </button>
+      </a>
+  </div>
 
-      <div class="flex justify-center mt-32">
-        <h1 class="text-xl p-12 font-custom text-white">© 2021 Rebecca Hallas</h1>
-      </div>
+  <div class="flex justify-center mt-32">
+    <h1 class="text-xl p-12 font-custom text-white">© 2021 Rebecca Hallas</h1>
+  </div>
 
       <script src="./index.js"></script>
 </body>
