@@ -1,5 +1,7 @@
 document.addEventListener('keydown', changePlayer, false); 
 document.addEventListener('keydown', selectPlayer, false)
+document.addEventListener('click', clickArrow, false)
+document.addEventListener('click', selectClick, false)
 
 var playerIndex = 1;
 
@@ -34,30 +36,34 @@ function selectPlayer(e) {
   location.replace("https://rebecca-hallas.github.io/red/homeRed.html")
 }
 
-// function selectClick(e) {
-//   var player = document.getElementById("player")
-//   player.src = "./images/player" + playerIndex + ".png"
+function selectClick(e) {
+  var target = e.target
+  var select = document.getElementById("select")
+  var player = document.getElementById("player")
+  player.src = "./images/player" + playerIndex + ".png"
 
-//   if (playerIndex == 1)
-//   location.replace("https://rebecca-hallas.github.io/pink/homePink.html")
+  if (target == select && playerIndex == 1)
+  location.replace("https://rebecca-hallas.github.io/pink/homePink.html")
 
-//   if (playerIndex == 2)
-//   location.replace("https://rebecca-hallas.github.io/green/homeGreen.html")
+  if (target == select && playerIndex == 2)
+  location.replace("https://rebecca-hallas.github.io/green/homeGreen.html")
 
-//   if (playerIndex == 3)
-//   location.replace("https://rebecca-hallas.github.io/red/homeRed.html")
-// }
+  if (target == select && playerIndex == 3)
+  location.replace("https://rebecca-hallas.github.io/red/homeRed.html")
+}
 
-// function clickArrow(e) {
-//   var target = e.target
-//   var player = document.getElementById("player")
-//   player.src = "./images/player" + playerIndex + ".png"
+function clickArrow(e) {
+  var target = e.target
+  var left = document.getElementById("left")
+  var right = document.getElementById("right")
+  var player = document.getElementById("player")
+  player.src = "./images/player" + playerIndex + ".png"
   
-//   if (target) 
-//   playerIndex++
+  if (target == left || right) 
+  playerIndex++
 
-//   if (playerIndex == 4)
-//   playerIndex = 1
-// }
+  if (playerIndex == 4)
+  playerIndex = 1
+}
 
 
