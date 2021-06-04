@@ -4,6 +4,7 @@ module.exports = {
   theme: {
     screens: {
       'lg': '1025px',
+      'ml': '1024px'
     },
     fontFamily: {
       'custom': '"Press Start 2P"',
@@ -27,12 +28,14 @@ module.exports = {
        animation: {
         wiggle: 'wiggle 1s ease-in-out infinite',
         'bounce-slow': 'bounce 2s linear infinite',
-        'spin-slow': 'spin 4s linear infinite'       }
+        'spin-slow': 'spin 4s linear infinite',
+      }
   },
   variants: {
     extend: {
         backgroundImage: ['hover', 'focus'],
-        animation: ['hover', 'focus']        
+        animation: ['hover', 'focus'],
+      
       }
     },
   },
