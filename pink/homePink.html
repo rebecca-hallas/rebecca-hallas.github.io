@@ -1,54 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-      <!-- Fonts -->
-      <link rel="preconnect" href="https://fonts.gstatic.com">
-      <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
       
-      <link rel="preconnect" href="https://fonts.gstatic.com">
-      <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
   
-      <!-- Tailwind Link -->
-      <link href="../tailwind.css" rel="stylesheet">
+<!-- Tailwind CSS Link -->
+<link href="../tailwind.css" rel="stylesheet">
 
-      <!-- Title -->
-      <title>Home</title>
+<!-- Title -->
+<title>Home</title>
 </head>
+
 <body class="bg-cover" style="background-image: url('../images/retro.png')">
-    <!-- Heading -->
 
-    <div class="grid grid-cols-5">
+<!-- Heading -->
+<div class="border-black lg:border-white border-4 lg:ml-48 lg:mt-36 w-screen h-screen lg:h-5/6 lg:w-9/12 lg:p-6 bg-black bg-opacity-70 lg:flex lg:justify-center">
 
-        <div class="place-self-center col-start-2 col-span-1">
-            <img class=" w-64 h-48 " src="../images/player1.png" />
-        </div>
+<div class="flex-wrap">
+    <div>
+        <h1 class="text-3xl lg:text-5xl text-center mt-12 lg:mt-16 font-custom text-white">Rebecca Hallas</h1>
+        <h1 class="text-2xl lg:text-4xl text-center p-3 font-custom text-white">Web Developer</h1>
+    </div>
+    <div>
+        <h1 class="text-2xl lg:text-4xl text-center mt-6 p-3 font-custom text-white animate-pulse">Choose your adventure...</h1>
+    </div>
+</div>
 
-        <div class="place-self-start col-start-3 col-span-2">
-            <h1 class="text-5xl p-12 font-custom text-white animate-pulse">Choose your adventure...</h1>
-        </div>
+<!-- Main Content -->
+<div class="flex justify-center">
 
+<div class="flex-col">
+    <!-- Buttons -->
+    <div>
+        <a href="./portfolioPink.html"><button class="h-12 w-60 lg:h-20 lg:w-72 text-sm lg:text-xl transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-100 rounded-full py-3 px-6 text-white m-6 border-2 bg-hotPink hover:bg-green-500 font-custom focus:outline-none">Portfolio</button></a>
     </div>
 
-<div class="grid grid-cols-3 grid-rows-3">
-      <!-- Buttons -->
-
-        <div class="col-start-2 row-start-1 place-self-center">
-            <a href="./portfolioPink.html"><button class="h-20 w-72 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-100 rounded-full py-3 px-6 text-white m-6 border-2 bg-hotPink hover:bg-green-500 font-custom text-xl focus:outline-none">Portfolio</button></a>
-        </div>
-
-        <div class="col-start-2 row-start-2 place-self-center">
-            <a href='./aboutPink.html'><button class="h-20 w-72 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-100 rounded-full py-3 px-6 text-white m-6 border-2 bg-hotPink hover:bg-green-500 font-custom text-xl focus:outline-none">About</button></a>
-        </div>
-
-        <div class="col-start-2 row-start-3 place-self-center">
-            <a href='./contactPink.html'><button class="h-20 w-72 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-100 rounded-full py-3 px-6 text-white m-6 border-2 bg-hotPink hover:bg-green-500 font-custom text-xl focus:outline-none">Contact</button></a>
-        </div>
-
-      </div>
+    <div>
+        <a href='./aboutPink.html'><button class="h-12 w-60 lg:h-20 lg:w-72 text-sm lg:text-xl transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-100 rounded-full py-3 px-6 text-white m-6 border-2 bg-hotPink hover:bg-green-500 font-custom focus:outline-none">About</button></a>
     </div>
+
+    <div>
+        <a href='./contactPink.html'><button class="h-12 w-60 lg:h-20 lg:w-72 text-sm lg:text-xl transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-100 rounded-full py-3 px-6 text-white m-6 border-2 bg-hotPink hover:bg-green-500 font-custom focus:outline-none">Contact</button></a>
+    </div>
+</div>
+
+</div>
+</div>
+
 </body>
 </html>
