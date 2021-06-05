@@ -1,6 +1,0 @@
-<audio id="snakeBite" src="audio/ahh.wav"></audio>
-
-function lose() {
-  var snakeBite = document.getElementById("snakeBite");
-  snakeBite.play();
-}
