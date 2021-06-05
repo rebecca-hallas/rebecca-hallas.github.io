@@ -2,6 +2,11 @@ module.exports = {
   purge: [],
   darkMode: false, // or 'media' or 'class'
   theme: {
+    fill: theme => ({
+      'red': theme('colors.red.500'),
+      'green': theme('colors.green.500'),
+      'blue': theme('colors.blue.500'),
+    }),
     screens: {
       'lg': '1025px',
       'ml': '1024px'
@@ -35,7 +40,7 @@ module.exports = {
     extend: {
         backgroundImage: ['hover', 'focus'],
         animation: ['hover', 'focus'],
-      
+        fill: ['hover', 'focus']
       }
     },
   },
