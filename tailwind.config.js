@@ -34,7 +34,11 @@ module.exports = {
         wiggle: 'wiggle 1s ease-in-out infinite',
         'bounce-slow': 'bounce 2s linear infinite',
         'spin-slow': 'spin 4s linear infinite',
-      }
+      },
+      rotate: {
+        '270': '270deg',
+        '330': '330deg',
+        '360': '360deg',
   },
   variants: {
     extend: {
@@ -45,4 +49,5 @@ module.exports = {
     },
   },
   plugins: [],
+}
 }
