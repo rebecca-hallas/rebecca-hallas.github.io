@@ -22,38 +22,33 @@
 
 <body class="bg-cover" style="background-image: url('./images/retro.png')">
 
+    <div>
+        <button
+          class="p-1 ml-3 mt-3 mb-3 lg:p-3 lg:ml-9 lg:mt-9 rounded-full text-white border-2 transition duration-500 ease-in-out bg-blue-500 hover:bg-blue-700 transform hover:-translate-y-1 hover:scale-100 rounded-md font-custom focus:outline-none">
+          <a class="p-2 lg:p-6" href='home.html'>Home</a>
+        </button>
+      </div>
+
     <div class="flex justify-center">
-        <h1 class="text-5xl mb-12 mt-12 font-custom text-white">Choose Player</h1>
+        <h1 class="text-5xl mb-12 mt-6 font-custom text-white">Choose Player</h1>
     </div>
 
     <div class="flex justify-center">
 
-        <div class="border-black lg:border-white border-4 w-screen h-screen lg:w-9/12 lg:h-2/3 bg-black">
+        <div class="border-black lg:border-white border-4 w-screen h-screen lg:w-9/12 lg:h-1/2 bg-black">
             
             <div class="m-12 flex justify-center">
         
-                    <h1 class="text-2xl font-custom text-white text-center">Use your LEFT and RIGHT arrow keys to rotate between players...</h1>
+                    <h1 class="text-xl font-custom text-white text-center">Use your LEFT and RIGHT arrow keys to rotate between players...</h1>
                 </div>
         
                 <div class="grid grid-cols-3 grid-rows-2">
 
-                <div class="row-start-1 col-start-1 col-span-1 place-self-center">
-                    <!-- <p class="py-3 px-6 text-white m-6 font-custom text-5xl text-white">←<p> -->
-                    <img class="hidden row-start-1 col-start-3 col-span-1 place-self-center w-24 h-24 animate-pulse"
-                        src="./images/leftkey.png">
-                </div>
-        
-                <img class="row-start-1 col-start-2 col-span-1 place-self-center w-72 h-48" id="player"
+                <img class="row-start-1 col-start-2 col-span-1 place-self-center w-60 h-36" id="player"
                     src="./images/player1.png">
         
-                <div class="row-start-1 col-start-3 col-span-1 place-self-center">
-                    <!-- <p class="py-3 px-6 text-white m-6 font-custom text-5xl text-white">→<p> -->
-                    <img class="hidden row-start-1 col-start-3 col-span-1 place-self-center w-24 h-24 animate-pulse"
-                        src="./images/rightkey.png">
-                </div>
-        
                 <div class="row-start-2 col-start-1 col-span-3 text-2xl mt-12 font-custom text-white text-center">
-                    <h1 class="text-center text-2xl font-custom text-white animate-pulse">then press ENTER to continue...</h1>
+                    <h1 class="text-center text-xl font-custom text-white animate-pulse">then press ENTER to continue...</h1>
                 </div>
 
         </div>
