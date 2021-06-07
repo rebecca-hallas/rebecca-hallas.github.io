@@ -1,50 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- Fonts -->
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-      
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
-  
-<!-- Tailwind CSS Link -->
-<link href="tailwind.css" rel="stylesheet">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 
-<!-- Title -->
-<title>Choose Character</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS Link -->
+    <link href="tailwind.css" rel="stylesheet">
+
+    <!-- Title -->
+    <title>Choose Character</title>
 </head>
 
 <body class="bg-cover" style="background-image: url('./images/retro.png')">
 
     <div class="flex justify-center">
-        <h1 class="text-5xl pt-24 font-custom text-white">Choose Player</h1>
-      </div>
+        <h1 class="text-5xl mb-12 mt-12 font-custom text-white">Choose Player</h1>
+    </div>
 
-      <div class="grid grid-cols-5 grid-rows-2">
-    
-        <div class="mt-12 row-start-1 col-start-2 col-span-1 place-self-center">
-            <!-- <p class="py-3 px-6 text-white m-6 font-custom text-5xl text-white">←<p> -->
-                <img class="mt-12 row-start-1 col-start-3 col-span-1 place-self-center w-24 h-24" src="./images/leftkey.png">
+    <div class="flex justify-center">
+
+        <div class="border-black lg:border-white border-4 w-screen h-screen lg:w-9/12 lg:h-2/3 bg-black">
+            
+            <div class="m-12 flex justify-center">
+        
+                    <h1 class="text-2xl font-custom text-white text-center">Use your LEFT and RIGHT arrow keys to rotate between players...</h1>
+                </div>
+        
+                <div class="grid grid-cols-3 grid-rows-2">
+
+                <div class="row-start-1 col-start-1 col-span-1 place-self-center">
+                    <!-- <p class="py-3 px-6 text-white m-6 font-custom text-5xl text-white">←<p> -->
+                    <img class="hidden row-start-1 col-start-3 col-span-1 place-self-center w-24 h-24 animate-pulse"
+                        src="./images/leftkey.png">
+                </div>
+        
+                <img class="row-start-1 col-start-2 col-span-1 place-self-center w-72 h-48" id="player"
+                    src="./images/player1.png">
+        
+                <div class="row-start-1 col-start-3 col-span-1 place-self-center">
+                    <!-- <p class="py-3 px-6 text-white m-6 font-custom text-5xl text-white">→<p> -->
+                    <img class="hidden row-start-1 col-start-3 col-span-1 place-self-center w-24 h-24 animate-pulse"
+                        src="./images/rightkey.png">
+                </div>
+        
+                <div class="row-start-2 col-start-1 col-span-3 text-2xl mt-12 font-custom text-white text-center">
+                    <h1 class="text-center text-2xl font-custom text-white animate-pulse">then press ENTER to continue...</h1>
+                </div>
+
         </div>
 
-		<img class="mt-12 row-start-1 col-start-3 col-span-1 place-self-center w-72 h-48" id="player" src="./images/player1.png">
+    </div>
 
-        <div class="mt-12 row-start-1 col-start-4 col-span-1 place-self-center">
-            <!-- <p class="py-3 px-6 text-white m-6 font-custom text-5xl text-white">→<p> -->
-                <img class="mt-12 row-start-1 col-start-3 col-span-1 place-self-center w-24 h-24" src="./images/rightkey.png">
-        </div>
-
-        <div class="h-24 mt-6 row-start-2 col-start-2 col-span-3 text-2xl pt-5 font-custom text-white text-center"><h1>Use the left and right arrow keys to rotate between players.</h1>
-
-    <h1 class="mt-6 text-center text-2xl font-custom text-white animate-pulse">Press Enter to continue...</h1>
-
-	</div>
-
-<script src="./character.js"></script>
+    <script src="./character.js"></script>
 </body>
+
 </html>
