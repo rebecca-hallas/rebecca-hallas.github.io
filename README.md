@@ -1,6 +1,6 @@
 # Rebecca Hallas Portfolio
 
-My portfolio is styled like an old-school arcade game, complete with flashing text and Space Invaders sprites.
+This is my portfolio! It's styled like an old-school arcade game, complete with flashing text and Space Invaders sprites.
 I was inspired by [Robby Leonardi's Interactive Resume](http://www.rleonardi.com/interactive-resume/).
 
 It is a static HTML website using: 
